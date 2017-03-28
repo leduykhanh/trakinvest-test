@@ -1,0 +1,38 @@
+@import 'sass/common/common';
+
+.sub-menu-container{
+
+    margin-bottom: 30px;
+    background-color: $default-text-color;
+    &:hover{
+      background-color: $default-text-color;
+    }
+  .sub-menu{
+    li{
+      display: inline-block;
+      a{
+        color: $white-grey-color;
+        text-transform: uppercase;
+        font-size: $menu-header-text-size;
+        text-decoration: none;
+        &:hover{
+          background-color: $default-text-color;
+          text-decoration: none;
+          color: $primary-color;
+        }
+
+
+
+
+      }
+       &.active, &:focus {
+          a {
+             background-color: transparent;
+            text-decoration: none;
+            color: $primary-color;
+          }
+        }
+    }
+
+  }
+}

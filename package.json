@@ -1,5 +1,5 @@
 {
-  "name": "AsiaFundSpace",
+  "name": "TrakInvest-Test",
   "version": "0.0.0",
   "dependencies": {
     "axios": "^0.14.0",
@@ -139,7 +139,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --inline --hot",
-    "build": "NODE_ENV=production webpack -p --config ./webpack.config.js",
+    "build": "webpack -p --config ./webpack.config.js",
     "compile-theme": "lessc -x node_modules/bootstrap-material-design/less/custom.less > public/static/css/material.design.custom.css",
     "test:lint": "eslint . --ext .js --ext .jsx --cache"
   }

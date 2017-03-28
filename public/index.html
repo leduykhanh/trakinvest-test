@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Auto Suggest search</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="static/images/common/favicon.png">
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/react-widgets.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/material-custom.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/ripples.min.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+
+    <link href="static/css/bundle.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="static/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap/material.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap/ripples.min.js"></script>
+    <script type="text/javascript">
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(searchString, position){
+              position = position || 0;
+              return this.substr(position, searchString.length) === searchString;
+          };
+        }
+    </script>
+
+
+
+
+</head>
+<body>
+
+<div id="content" class="container-fluid wrapper">
+</div>
+    <script src="static/js/bundle.js"></script>
+</body>
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $.material.init();
+    })
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-38462559-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyApBQR02RGAGuArZLQvcawvcEkXjyS4Fz8"></script>
+</html>

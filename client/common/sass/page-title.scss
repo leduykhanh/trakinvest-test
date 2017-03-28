@@ -1,0 +1,111 @@
+@import "sass/common/variables";
+.page-title-container {
+
+  position: relative;
+  .left {
+    background-color: $primary-color;
+    opacity: 0.85;
+    border-top-right-radius: 260px;
+    height: 100%;
+    z-index:999;
+  }
+  .page-title
+  {
+    //padding-top:100px;
+    padding-top:50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-size:$page-title-text-size;
+    h1{
+      color: $white-color;
+    }
+  }
+  .page-title-image
+  {
+      border-top-left-radius: 260px;
+      height: 100%;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+      right:0;
+  }
+  margin-bottom:$spacer*2;
+}
+
+
+
+
+@media only screen and (max-width: $responsive-break-xs) {
+  .page-title-container {
+
+      height: 160px;
+      .left {
+        width: 87.5%;
+      }
+      .page-title
+      {
+        padding-left: 10%;
+      }
+      .page-title-image
+      {
+
+          width:80%;
+      }
+    }
+}
+
+@media only screen and (min-width: $responsive-break-xs+1) {
+
+  .page-title-container {
+      height: 260px;
+      .left {
+
+        width: 50%;
+      }
+      .page-title
+      {
+        padding-left: 10%;
+      }
+      .page-title-image
+      {
+
+          width:70%;
+      }
+    }
+}
+
+@media only screen and (min-width: $responsive-break-sm) {
+  .page-title-container {
+      .left {
+
+        width: 50%;
+      }
+      .page-title
+      {
+        padding-left: 10%;
+      }
+      .page-title-image
+      {
+
+          width:80%;
+      }
+    }
+}
+
+@media only screen and (min-width: $responsive-break-md) {
+  .page-title-container {
+      .left {
+
+        width: 45%;
+      }
+      .page-title
+      {
+        padding-left: 40%;
+      }
+      .page-title-image
+      {
+
+          width:75%;
+      }
+    }
+}

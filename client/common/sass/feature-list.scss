@@ -1,0 +1,30 @@
+.feature-list{
+	margin-bottom: 48px;
+	
+	.feature {
+		text-align: center;
+		padding: 16px;
+
+		.caption {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 28px;
+			margin-top: 16px;
+		}
+	}
+
+	.media {
+		height: 120px;
+		border-bottom: 1px solid #ccc;
+		margin-top: 0;
+		.media-left{
+			padding: 24px;
+			img {
+				width: 64px;
+			}
+		}
+		.media-right{
+			vertical-align: middle;
+		}
+	}
+}

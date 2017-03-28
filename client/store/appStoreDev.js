@@ -2,8 +2,6 @@ import { createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
 import createLogger from 'redux-logger'
 import  {apiMiddleware} from 'redux-api-middleware';
-import endpointMiddleware from 'middlewares/endpointMiddleware'
-import jwtRefreshMiddleware from 'middlewares/jwtRefreshMiddleware'
 import {  routerMiddleware } from 'react-router-redux'
 import {browserHistory} from 'react-router';
 import createActionBuffer from 'redux-action-buffer'
@@ -21,8 +19,6 @@ const app_store_dev = preloadedState => {
         autoRehydrate({
           log: true
         }),
-        applyMiddleware(createActionBuffer(REHYDRATE),jwtRefreshMiddleware,endpointMiddleware,thunk,apiMiddleware, createLogger(),routingMiddleware),
-          window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
       )
     )
